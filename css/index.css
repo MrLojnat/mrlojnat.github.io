@@ -2,7 +2,7 @@ body{
     font-family: Arial, serif;
     margin: 0;
     padding: 0;
-    background-image: url('../img/plaine.png'); /* Replace with your image path */
+    background-image: url('img/plaine.png'); /* Replace with your image path */
     background-size: cover; /* This will scale the background image to be as large as possible */
     background-repeat: no-repeat;
 }
