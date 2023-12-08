@@ -1,0 +1,73 @@
+body{
+    font-family: Arial, serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('plaine.png'); /* Replace with your image path */
+    background-size: cover; /* This will scale the background image to be as large as possible */
+    background-repeat: no-repeat;
+}
+button{
+    padding: 10px 30px ;
+    border-radius: 30px;
+    background-color: green;
+    border: 0;
+    color: white;
+    font-size: 2em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.container  {
+    height: 100vh; /* 100% of the viewport height */
+    width: 100vw;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+
+}
+p{
+    color: white;
+    font-size: 50px;
+    animation:botttom-top 2s;
+}
+.center {
+    position: absolute;
+    height: 200px;
+    display: block;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+button:hover{
+    background-color: rgb(29, 114, 2);
+}
+
+/* For mobile devices */
+@media screen and (max-width: 600px) {
+    .container {
+        height: auto; /* Adjust the height automatically */
+        width: auto; /* Take up the full width of the screen */
+    }
+}
+
+@keyframes apparition_anime  {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@keyframes botttom-top {
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    
+}
